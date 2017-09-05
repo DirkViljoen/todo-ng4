@@ -1,4 +1,8 @@
-<h4>My Lists</h4>
-<ul>
-  <li *ngFor="let list of lists">{{list.id}} {{list.title}}</li>
-</ul>
+<h2>My Lists</h2>
+
+<md-list>
+  <md-list-item *ngFor="let list of lists">
+    <md-icon md-list-icon>chevron_right</md-icon>
+    <h4>{{list.title}}</h4>
+  </md-list-item>
+</md-list>
